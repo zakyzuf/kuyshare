@@ -11,7 +11,7 @@ connectDB();
 
 //cors
 const corsOptions = {
-    origin: proces.env.ALLOWED_CLIENTS.split(',')
+    origin: process.env.ALLOWED_CLIENTS.split(',')
 }
 app.use(cors(corsOptions));
 app.set('views', path.join(__dirname, '/views'));
